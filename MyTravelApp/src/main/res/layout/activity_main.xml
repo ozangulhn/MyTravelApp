@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.example.hezeyan.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TravelApp"
+            android:textColor="@color/colorWhite"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/toAdminLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            app:srcCompat="@drawable/user" />
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="303dp"
+            android:layout_marginRight="303dp"
+            android:layout_marginBottom="0dp"
+            android:text="Welcome !"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/verticalmenu1"
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/search_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@android:color/darker_gray"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="12dp">
+
+                <ImageButton
+                    android:id="@+id/search_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/search" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/wishlist_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <ImageButton
+                    android:id="@+id/wishlist_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/heart" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Wishlist"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/map_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <ImageButton
+                    android:id="@+id/map_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/placeholder" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Map"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verticalmenu2"
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/popular_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardElevation="24dp">
+
+                <ImageButton
+                    android:id="@+id/popular_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/star" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="My Lists"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/checklist_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <ImageButton
+                    android:id="@+id/checklist_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/checked" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Checklist"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sendrequest_cardview"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/cardview_dark_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <ImageButton
+                    android:id="@+id/sendrequest_imageButton"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    app:srcCompat="@drawable/edit" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Send Request"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
